@@ -4,7 +4,7 @@ import { visit } from 'unist-util-visit'
 
 import { isAbsoluteUrl } from '@stefanprobst/is-absolute-url'
 
-export function withNoReferrerLinks(): Transformer<Hast.Root> {
+export default function withNoReferrerLinks(): Transformer<Hast.Root> {
   const transformer: Transformer<Hast.Root> = function transformer(tree, _file) {
     visit(tree, 'element', function onElement(node) {
       if (node.tagName !== 'a') return

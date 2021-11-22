@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/rehype-noreferrer-links",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "license": "MIT",
   "type": "module",
@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "format": "prettier . --list-different --ignore-path .gitignore",
-    "format:fix": "yarn format --write",
+    "format:fix": "yarn run format --write",
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {
